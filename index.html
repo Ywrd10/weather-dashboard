@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name= "viewport" content="width=device-width, initial-scale=1" />
+    <title> Weather Dashboard </title>
+    <link rel="stylesheet" href="style.css"/>
+    <script defer src="app.js"></script> 
+    
+</head>
+<body>
+        <h1>Weather Dashboard</h1>
+
+        <form id="search-form">
+            <input id="city" type="text" placeholder="Enter city (e.g., Orlando)" required/>
+            <button type="submit">Search</button>
+            <button type="button" id="geo-btn">Use my location</button>
+            <label class="units">
+                <input id="unit-toggle" type="checkbox" />
+                °F
+            </label>
+        </form>    
+
+
+
+        <section id="current" class="card"></section>
+
+        <section id="forecast" class="card">
+        <h2>5-Day Forecast</h2>
+        <div id="forecast-grid"></div>
+        </section>
+
+        <div id="error" role="status" aria-live="polite"></div>
+        <div id="error" style="color: #b91c1c;"></div>
+</body>
+</html>
